@@ -1,3 +1,5 @@
+CREATE DATABASE alx_book_store;
+
 CREATE TABLE Books(
 	book_id INT PRIMARY KEY,
 	title VARCHAR(130),
@@ -38,4 +40,4 @@ CREATE TABLE Order_Details(
 	REFERENCES Orders(order_id),
 	CONSTRAINT FK_book_id FOREIGN KEY (book_id)
 	REFERENCES Books(book_id)
-);
+);git 
